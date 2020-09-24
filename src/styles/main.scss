@@ -1,4 +1,5 @@
 $primary: #fff;
+$bg: #232B32;
 
 *,
 *::before,
@@ -18,7 +19,9 @@ html {
 }
 
 body {
-  background: #364f6b;
+  background: $bg;
+  color: $primary;
+  opacity: 0.87;
 }
 
 #root {
@@ -38,7 +41,6 @@ header {
 }
 
 .logo {
-  color: $primary;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +78,30 @@ header {
     text-decoration: none;
     color: $primary;
   }
+}
+
+
+.about {
+  margin: 0 auto;
+  width: 90%;
+  padding: 40px 5px;
+  border-top: 2px solid var(--bg2);
+  color: var(--fontColor);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about h2 {
+  width: max-content;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.about p {
+  padding: 1rem;
 }
 
 @media (min-width: 650px) {
@@ -116,5 +142,21 @@ header {
   }
   .navbar ul li > *:hover {
     text-decoration: underline;
+  }
+
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about p {
+    max-width: 64rem;
+    margin: 0;
+  }
+
+  .about h2 {
+    margin-bottom: 20px;
   }
 }
