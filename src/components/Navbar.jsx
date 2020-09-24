@@ -3,16 +3,14 @@ import NavbarItem from "./NavbarItem";
 
 function Navbar() {
   return (
-    <div>
-
+    <nav className="navbar">
       <ul>
-        <NavbarItem id="https://google.ro" section="About" />
-        <NavbarItem id="https://google.ro" section="Projects" />
-        <NavbarItem id="https://google.ro" section="Contact" />
-        <NavbarItem id="https://google.ro" section="Resume" />
+        <NavbarItem id="#about" section="about" />
+        <NavbarItem id="#projects" section="projects" />
+        <NavbarItem id="#contact" section="contact" />
+        <NavbarItem id="#resume" section="resume" />
       </ul>
-      
-    </div>
+    </nav>
   );
 }
 

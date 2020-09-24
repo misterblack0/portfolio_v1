@@ -1,25 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Logo from "./Logo";
 
 function Header() {
   return (
-    <div>
-
-
-<div className="logo">
-<h1>Marius Ciocoiu</h1>
-<h2>Web Developer</h2>
-</div>
-
-
-<div className="navbar">
-
-<Navbar />
-
-</div>
-
-
-</div>
+    <header>
+      <Logo />
+      <Navbar />
+    </header>
   );
 }
 
