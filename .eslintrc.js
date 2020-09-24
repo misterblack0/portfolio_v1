@@ -13,6 +13,6 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'react/prop-types': ['error'],
-}
+    "react/prop-types": ["error"],
+  },
 };
