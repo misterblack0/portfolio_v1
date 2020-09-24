@@ -18,32 +18,41 @@ html {
 }
 
 body {
-  max-width: 100vw;
   background: #364f6b;
+}
+
+#root {
+  max-width: 144rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 header {
-  height: 30rem;
+  height: 10rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 .logo {
   color: $primary;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   & h1 {
     font-size: 2.2rem;
     font-weight: 800;
+    margin-bottom: 0.8rem;
   }
 
   & h2 {
     font-size: 1.7rem;
     font-weight: 700;
+    margin: 0;
   }
 }
 
@@ -51,6 +60,9 @@ header {
   & ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   & ul li {
@@ -58,8 +70,51 @@ header {
   }
 
   &__item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
     font-size: 1.6rem;
     text-decoration: none;
     color: $primary;
+  }
+}
+
+@media (min-width: 650px) {
+  header {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1080px) and (min-height: 500px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  .navbar ul li {
+    padding: 0 1rem;
+    border: none;
+  }
+  .navbar ul li > * {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .navbar ul li > *:hover {
+    text-decoration: underline;
   }
 }
