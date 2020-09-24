@@ -1,11 +1,9 @@
 import React from "react";
-import "../styles/main.scss"
+import "../styles/main.scss";
 import Header from "./Header";
 
 function App() {
-  return (
-    <Header />
-  );
+  return <Header />;
 }
 
 export default App;
