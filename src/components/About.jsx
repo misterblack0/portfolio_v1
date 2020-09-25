@@ -8,8 +8,8 @@ function About() {
       <p>
         I am a self-taught developer who is extremely passionate about web
         development, linux, blockchain technology, decentralized protocols and
-        finance. I'm constantly learning and looking for new experiences to grow
-        both as a professional and as a person.
+        finance. I`&apos;`m constantly learning and looking for new experiences
+        to grow both as a professional and as a person.
       </p>
       <p>
         I am a naturally curious nerd, obsessed with beautiful products and my
