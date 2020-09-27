@@ -9,6 +9,7 @@ function Navbar() {
         <NavbarItem id="#projects" section="projects" />
         <NavbarItem id="#contact" section="contact" />
         <NavbarItem id="#resume" section="resume" />
+        <NavbarItem id="https://github.com/" section="github" />
       </ul>
     </nav>
   );
