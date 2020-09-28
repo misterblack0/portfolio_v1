@@ -1,5 +1,6 @@
-$primary: #fff;
-$bg: #232B32;
+$primary-color: #eeeeee;
+$secondary-color: #00adb5;
+$bg-color: #222831;
 
 *,
 *::before,
@@ -15,54 +16,38 @@ body {
 
 html {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "MuseoModerno", cursive;
 }
 
 body {
-  background: $bg;
-  color: $primary;
+  background: $bg-color;
+  color: $primary-color;
   opacity: 0.87;
 }
 
 #root {
-  max-width: 144rem;
+  max-width: 50vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  /* background: green; */
 }
 
 header {
   height: 10rem;
-  width: 100%;
+
+  width: 50vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
+
   padding: 1rem;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  & h1 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 0.8rem;
-  }
-
-  & h2 {
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin: 0;
-  }
+  /*   background: red; */
 }
 
 .navbar {
   & ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -71,54 +56,66 @@ header {
     margin-right: 1rem;
   }
 
-  &__item {
+  & a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-decoration: none;
-    color: $primary;
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+      transition: 0.2s ease-in-out;
+    }
   }
 }
 
-
 .about {
-  margin: 0 auto;
-  width: 90%;
-  padding: 40px 5px;
-  border-top: 2px solid var(--bg2);
-  color: var(--fontColor);
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-weight: 300;
+  margin-top: 10rem;
+  
+
+  & div {
+display: flex;
+
+  }
+
+  & h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: $secondary-color;
+  }
+
+  & h1::before {
+    content: ">\A0";
+    padding-right: 3rem;
+  }
+
+  & span {
+    width: 5rem;
+    display: block;
+    background-color: $secondary-color;
+    animation: caret 1s steps(1) infinite;
+  }
 }
 
-.about h2 {
-  width: max-content;
-  display: block;
-  margin: 0 auto;
-  padding: 5px 10px;
-  border-radius: 2px;
+@keyframes caret {
+  50% {
+    background-color: transparent;
+  }
 }
 
-.about p {
-  padding: 1rem;
-}
-
-@media (min-width: 650px) {
+@media (min-width: 350px) {
   header {
-    margin-bottom: 5rem;
+    justify-content: center;
   }
 }
 
 @media (min-width: 1080px) and (min-height: 500px) {
   header {
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
-  .logo {
-    display: flex;
-    align-items: flex-start;
+  .navbar {
   }
 
   .navbar ul {
@@ -130,33 +127,5 @@ header {
     padding: 0;
     margin: 0;
     text-align: right;
-  }
-
-  .navbar ul li {
-    padding: 0 1rem;
-    border: none;
-  }
-  .navbar ul li > * {
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .navbar ul li > *:hover {
-    text-decoration: underline;
-  }
-
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about p {
-    max-width: 64rem;
-    margin: 0;
-  }
-
-  .about h2 {
-    margin-bottom: 20px;
   }
 }

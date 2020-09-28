@@ -3,21 +3,15 @@ import React from "react";
 function About() {
   return (
     <section id="about" className="about">
-      <h2>About me</h2>
-      <p>Hello there, my name is Marius Ciocoiu.</p>
+      <div>
+        <h1>Marius Ciocoiu</h1>
+        <span>&nbsp;</span>
+      </div>
       <p>
-        I am a self-taught developer who is extremely passionate about web
-        development, linux, blockchain technology, decentralized protocols and
-        finance. I`&apos;`m constantly learning and looking for new experiences
-        to grow both as a professional and as a person.
+        I am a web developer at MemSQL. My passion is building simple, beautiful
+        user experiences.
       </p>
-      <p>
-        I am a naturally curious nerd, obsessed with beautiful products and my
-        major influence is minimalism. When I’m not working, I’m either spending
-        time with my family and friends, reading, travelling the world, smashing
-        the gym or enjoy an excellent cup of coffee. I believe in living better
-        with less.
-      </p>
+      <p>Check out my side-projects below.</p>
     </section>
   );
 }

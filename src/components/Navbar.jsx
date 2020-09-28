@@ -5,11 +5,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <NavbarItem id="#about" section="about" />
-        <NavbarItem id="#projects" section="projects" />
-        <NavbarItem id="#contact" section="contact" />
-        <NavbarItem id="#resume" section="resume" />
-        <NavbarItem id="https://github.com/" section="github" />
+        <NavbarItem id="#projects" section="Projects" />
+        <NavbarItem id="#contact" section="Contact" />
       </ul>
     </nav>
   );

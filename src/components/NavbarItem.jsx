@@ -3,9 +3,7 @@ import React from "react";
 function NavbarItem(props) {
   return (
     <li>
-      <a className="navbar__item" href={props.id}>
-        {props.section}
-      </a>
+      <a href={props.id}>{props.section}</a>
     </li>
   );
 }
