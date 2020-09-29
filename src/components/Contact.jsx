@@ -1,15 +1,34 @@
 import React from "react";
-import Button from "./Button";
-import SocialIcon from "./SocialIcon";
 
 function Contact() {
   return (
     <section id="Contact" className="contact">
-      <h2>Get in touch</h2>
-      <Button URL="mailto:csmarius0@gmail.com" content="Email me" />
-      <Button URL="mailto:csmarius0@gmail.com" content="Resume" />
-
-      {social - icons.map((icon) => <SocialIcon key={social.id} />)}
+      <h2>Get in touch!</h2>
+      <div>
+        <span>
+          <a rel="noopener noreferrer" target="_blank" href="mailto:">
+            csmarius0@gmail.com
+          </a>
+        </span>
+        <span>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/marius-ciocoiu/"
+          >
+            LinkedIn
+          </a>
+        </span>
+        <span>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/misterblack0"
+          >
+            GitHub
+          </a>
+        </span>
+      </div>
     </section>
   );
 }

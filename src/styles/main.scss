@@ -1,5 +1,6 @@
 $primary-color: #eeeeee;
 $secondary-color: #00adb5;
+/* $color: #393e46; */
 $bg-color: #222831;
 
 *,
@@ -16,44 +17,41 @@ body {
 
 html {
   font-size: 62.5%;
-  font-family: "MuseoModerno", cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   background: $bg-color;
   color: $primary-color;
-  opacity: 0.87;
 }
 
 #root {
   max-width: 50vw;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  /* background: green; */
 }
 
 header {
   height: 10rem;
-
-  width: 50vw;
+  max-width: 50vw;
   display: flex;
   align-items: center;
-
   padding: 1rem;
-  /*   background: red; */
+
+  justify-content: center;
 }
 
 .navbar {
   & ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   & ul li {
-    margin-right: 1rem;
+    margin-left: 4rem;
   }
 
   & a {
@@ -71,40 +69,133 @@ header {
 }
 
 .about {
-  margin-top: 10rem;
-  
-
-  & div {
-display: flex;
-
+  &__heading {
+    display: flex;
+    margin: 5rem 0;
   }
 
   & h1 {
-    font-size: 6rem;
+    font-size: 2.4rem;
     font-weight: 300;
     color: $secondary-color;
+    margin: 0;
   }
 
   & h1::before {
     content: ">\A0";
-    padding-right: 3rem;
+    padding-right: 2.5rem;
   }
 
-  & span {
-    width: 5rem;
+  &__caret {
+    height: 3.5rem;
+    width: 1.2rem;
     display: block;
     background-color: $secondary-color;
     animation: caret 1s steps(1) infinite;
   }
-}
 
-@keyframes caret {
-  50% {
-    background-color: transparent;
+  & p {
+    font-size: 2rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $secondary-color;
   }
 }
 
-@media (min-width: 350px) {
+/* Terminal Design */
+
+.terminal {
+  &__window {
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 8rem auto;
+    box-shadow: 0 0.25rem 0.5rem #12181e;
+    border-radius: 0 0 0.1rem 0.1rem;
+  }
+
+  &__bar {
+    background: #191919;
+    height: 36px;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &__body {
+    height: 100%;
+    background: #232323;
+    padding: 18px;
+  }
+
+  &__body pre {
+    margin: 0;
+    font-family: inherit;
+  }
+
+  &__body .terminal__pulse {
+    -webkit-animation: pulse 1s ease-in-out infinite;
+    -moz-animation: pulse 1s ease-in-out infinite;
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  &__prompt::before {
+    content: ">\A0";
+    padding-right: 0.5rem;
+  }
+
+  &__command {
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 2.5rem;
+    color: #32c146;
+    display: flex;
+    flex-wrap: wrap;
+
+    & a:hover {
+      opacity: 0.8;
+      transition: 0.1s ease-in-out;
+    }
+  }
+
+  &__btn,
+  &__btn::before,
+  &__btn::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: block;
+  }
+
+  &__btn {
+    background: #f6b73e;
+    position: relative;
+    margin-left: 38px;
+    top: 12px;
+  }
+  &__btn::before,
+  &__btn::after {
+    content: " ";
+    position: absolute;
+  }
+  &__btn::before {
+    background: #f55551;
+    margin-left: -20px;
+  }
+  &__btn::after {
+    background: #32c146;
+    margin-left: 20px;
+  }
+}
+
+footer p {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 480px) {
   header {
     justify-content: center;
   }
@@ -116,16 +207,196 @@ display: flex;
   }
 
   .navbar {
+    & ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+    }
+
+    & ul li {
+      margin-left: 4rem;
+    }
   }
 
-  .navbar ul {
+  .about {
+    & h1 {
+      font-size: 6rem;
+    }
+
+    &__caret {
+      height: 7.5rem;
+      width: 2.5rem;
+    }
+  }
+
+  /* Terminal Design */
+
+  .terminal {
+    &__window {
+      font-size: 1.7rem;
+      width: 100%;
+      margin: 8rem auto;
+      box-shadow: 0 0.25rem 0.5rem #12181e;
+      border-radius: 0 0 0.1rem 0.1rem;
+    }
+
+    &__bar {
+      background: #191919;
+      height: 36px;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    &__body {
+      height: 100%;
+      background: #232323;
+      padding: 18px;
+    }
+
+    &__body pre {
+      margin: 0;
+    }
+
+    &__body .terminal__pulse {
+      -webkit-animation: pulse 1s ease-in-out infinite;
+      -moz-animation: pulse 1s ease-in-out infinite;
+      animation: pulse 1s ease-in-out infinite;
+    }
+
+    &__prompt::before {
+      content: ">\A0";
+      padding-right: 0.5rem;
+    }
+
+    &__command {
+      padding-bottom: 3rem;
+      color: #32c146;
+    }
+
+    &__btn,
+    &__btn::before,
+    &__btn::after {
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      display: block;
+    }
+
+    &__btn {
+      background: #f6b73e;
+      position: relative;
+      margin-left: 38px;
+      top: 12px;
+    }
+    &__btn::before,
+    &__btn::after {
+      content: " ";
+      position: absolute;
+    }
+    &__btn::before {
+      background: #f55551;
+      margin-left: -20px;
+    }
+    &__btn::after {
+      background: #32c146;
+      margin-left: 20px;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & div {
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    list-style: none;
-    padding: 0;
+    justify-content: center;
+    margin: 10rem 0;
+  }
+
+  & h2 {
+    font-size: 2.4rem;
+  }
+
+  & a {
+    font-size: 1.8rem;
+    text-decoration: none;
     margin: 0;
-    text-align: right;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  & span:after {
+    font-size: 1.8rem;
+    content: "||";
+/*     color: #525f7f; */
+    margin: 0 3rem;
+  }
+
+  & span:nth-child(3):after {
+    content: "";
+    margin: 0;
+}
+}
+
+/* Keyframes */
+
+@-webkit-keyframes caret {
+  50% {
+    background-color: transparent;
+  }
+}
+
+@-moz-keyframes caret {
+  50% {
+    background-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

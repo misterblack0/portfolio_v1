@@ -2,10 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    
-
-<div></div>
-    
+    <footer>
+      <p>Made by Marius Ciocoiu © {new Date().getFullYear()}</p>
+    </footer>
   );
 }
 
