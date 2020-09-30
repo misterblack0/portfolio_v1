@@ -31,13 +31,10 @@ body {
 }
 
 header {
-  height: 10rem;
   max-width: 50vw;
   display: flex;
   align-items: center;
   padding: 1rem;
-
-  justify-content: center;
 }
 
 .navbar {
@@ -188,7 +185,7 @@ header {
 }
 
 footer p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
 }
@@ -203,6 +200,7 @@ footer p {
 
 @media (min-width: 1080px) and (min-height: 500px) {
   header {
+    height: 10rem;
     justify-content: flex-end;
   }
 
@@ -335,8 +333,8 @@ footer p {
   }
 
   & span:after {
-    font-size: 2.5rem;
-    content: "·";
+    font-size: 2rem;
+    content: "•";
     margin: 0 3rem;
   }
 

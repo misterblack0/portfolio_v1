@@ -1,33 +1,22 @@
 import React from "react";
+import ContactLink from "./ContactLink";
 
 function Contact() {
   return (
     <section id="Contact" className="contact">
       <h2>Get in touch!</h2>
       <div>
-        <span>
-          <a rel="noopener noreferrer" target="_blank" href="mailto:">
-            csmarius0@gmail.com
-          </a>
-        </span>
-        <span>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/marius-ciocoiu/"
-          >
-            LinkedIn
-          </a>
-        </span>
-        <span>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/misterblack0"
-          >
-            GitHub
-          </a>
-        </span>
+        <ContactLink
+          URL="mailto:csmarius0@gmail.com"
+          text="csmarius0@gmail.com"
+        />
+
+        <ContactLink
+          URL="https://www.linkedin.com/in/marius-ciocoiu/"
+          text="LinkedIn"
+        />
+
+        <ContactLink URL="https://github.com/misterblack0" text="GitHub" />
       </div>
     </section>
   );

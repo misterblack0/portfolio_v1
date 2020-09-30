@@ -1,4 +1,5 @@
 import React from "react";
+import ContactLink from "./ContactLink";
 
 function Terminal() {
   return (
@@ -16,29 +17,29 @@ function Terminal() {
           <div className="terminal__prompt">Marius.contactInfo</div>
           <div className="terminal__command">
             [
-            <a rel="noopener noreferrer" target="_blank" href="mailto:">
-              &quot;csmarius0@gmail.com&quot;
-            </a>
+            <ContactLink
+              URL="mailto:csmarius0@gmail.com"
+              text='"csmarius0@gmail.com"'
+            />
             ,{" "}
-            <a href="https://www.linkedin.com/in/marius-ciocoiu/">
-              &quot;LinkedIn&quot;
-            </a>
+            <ContactLink
+              URL="https://www.linkedin.com/in/marius-ciocoiu/"
+              text='"LinkedIn"'
+            />
             ,{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://github.com/misterblack0"
-            >
-              &quot;GitHub&quot;
-            </a>
+            <ContactLink
+              URL="https://github.com/misterblack0"
+              text='"GitHub"'
+            />
             ]
           </div>
           <div className="terminal__prompt">Marius.resume</div>
           <div className="terminal__command">
             [
-            <a rel="noopener noreferrer" target="_blank" href="https://">
-              &quot;mariusciocoiu.pdf&quot;
-            </a>
+            <ContactLink
+              URL="https://www.linkedin.com/in/marius-ciocoiu/"
+              text='"mariusciocoiu.pdf"'
+            />
             ]
           </div>
           <div className="terminal__prompt">Marius.interests</div>
