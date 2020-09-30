@@ -15,15 +15,31 @@ function Terminal() {
           </div>
           <div className="terminal__prompt">Marius.contactInfo</div>
           <div className="terminal__command">
-            [<a href="mailto:">&quot;csmarius0@gmail.com&quot;</a>,{" "}
+            [
+            <a rel="noopener noreferrer" target="_blank" href="mailto:">
+              &quot;csmarius0@gmail.com&quot;
+            </a>
+            ,{" "}
             <a href="https://www.linkedin.com/in/marius-ciocoiu/">
               &quot;LinkedIn&quot;
             </a>
-            , <a href="https://github.com/misterblack0">&quot;GitHub&quot;</a>]
+            ,{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/misterblack0"
+            >
+              &quot;GitHub&quot;
+            </a>
+            ]
           </div>
           <div className="terminal__prompt">Marius.resume</div>
           <div className="terminal__command">
-            [<a href="https://">&quot;mariusciocoiu.pdf&quot;</a>]
+            [
+            <a rel="noopener noreferrer" target="_blank" href="https://">
+              &quot;mariusciocoiu.pdf&quot;
+            </a>
+            ]
           </div>
           <div className="terminal__prompt">Marius.interests</div>
           <div className="terminal__command">

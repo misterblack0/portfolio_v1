@@ -17,7 +17,7 @@ body {
 
 html {
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -335,16 +335,15 @@ footer p {
   }
 
   & span:after {
-    font-size: 1.8rem;
-    content: "||";
-/*     color: #525f7f; */
+    font-size: 2.5rem;
+    content: "·";
     margin: 0 3rem;
   }
 
   & span:nth-child(3):after {
     content: "";
     margin: 0;
-}
+  }
 }
 
 /* Keyframes */
