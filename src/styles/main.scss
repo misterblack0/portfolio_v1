@@ -1,6 +1,5 @@
 $primary-color: #eeeeee;
 $secondary-color: #00adb5;
-/* $color: #393e46; */
 $bg-color: #222831;
 
 *,
@@ -10,7 +9,8 @@ $bg-color: #222831;
 }
 
 html,
-body {
+body,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -26,35 +26,29 @@ body {
 }
 
 #root {
-  max-width: 50vw;
+  max-width: 93vw;
   margin: 0 auto;
 }
 
 header {
-  max-width: 50vw;
+  max-width: 93vw;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  margin-top: 4rem;
+  justify-content: center;
 }
 
 .navbar {
   & ul {
+    width: 20rem;
     list-style: none;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  & ul li {
-    margin-left: 4rem;
+    justify-content: space-between;
   }
 
   & a {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: $primary-color;
 
@@ -66,13 +60,14 @@ header {
 }
 
 .about {
+  margin-top: 7rem;
   &__heading {
     display: flex;
-    margin: 5rem 0;
+    margin: 6rem 0;
   }
 
   & h1 {
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: $secondary-color;
     margin: 0;
@@ -80,7 +75,7 @@ header {
 
   & h1::before {
     content: ">\A0";
-    padding-right: 2.5rem;
+    padding-right: 2rem;
   }
 
   &__caret {
@@ -92,7 +87,8 @@ header {
   }
 
   & p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
 
   & a {
@@ -107,7 +103,7 @@ header {
   &__window {
     font-size: 1.7rem;
     width: 100%;
-    margin: 8rem auto;
+    margin: 4rem auto;
     box-shadow: 0 0.25rem 0.5rem #12181e;
     border-radius: 0 0 0.1rem 0.1rem;
   }
@@ -190,32 +186,71 @@ footer p {
   justify-content: center;
 }
 
-/* Media Queries */
+.secondary-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+  margin-bottom: 6rem;
+}
 
-@media (min-width: 480px) {
-  header {
-    justify-content: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & span {
+    margin-bottom: 3rem;
+  }
+
+  & a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+      transition: 0.2s ease-in-out;
+    }
   }
 }
 
-@media (min-width: 1080px) and (min-height: 500px) {
+/* Media Queries */
+
+@media (min-width: 1080px) {
+  #root {
+    max-width: 50vw;
+  }
+
+  header {
+    max-width: 50vw;
+  }
+
   header {
     height: 10rem;
     justify-content: flex-end;
+    padding: 1rem;
   }
 
   .navbar {
     & ul {
       flex-direction: row;
       justify-content: flex-end;
-      list-style: none;
-      padding: 0;
-      margin: 0;
+
       text-align: right;
     }
 
     & ul li {
       margin-left: 4rem;
+    }
+
+    & a {
+      font-size: 1.6rem;
     }
   }
 
@@ -227,6 +262,10 @@ footer p {
     &__caret {
       height: 7.5rem;
       width: 2.5rem;
+    }
+
+    & p {
+      font-size: 2rem;
     }
   }
 
@@ -302,45 +341,30 @@ footer p {
       margin-left: 20px;
     }
   }
-}
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & div {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 10rem 0;
-  }
-
-  & h2 {
-    font-size: 2.4rem;
-  }
-
-  & a {
-    font-size: 1.8rem;
-    text-decoration: none;
-    margin: 0;
-    color: $primary-color;
-    &:hover {
-      color: $secondary-color;
-      transition: 0.2s ease-in-out;
+  .contact {
+    & div {
+      flex-direction: row;
     }
-  }
 
-  & span:after {
-    font-size: 2rem;
-    content: "•";
-    margin: 0 3rem;
-  }
+    & div {
+      flex-direction: row;
+      justify-content: center;
+      margin: 10rem 0;
+    }
 
-  & span:nth-child(3):after {
-    content: "";
-    margin: 0;
+    & span {
+      &:after {
+        font-size: 2rem;
+        content: "•";
+        margin: 0 3rem;
+      }
+
+      &:nth-child(3):after {
+        content: "";
+        margin: 0;
+      }
+    }
   }
 }
 

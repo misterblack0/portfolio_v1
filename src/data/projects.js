@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     id: 1,
     name: "project-name",
@@ -18,3 +18,5 @@ export const projects = [
     techStack: ["React", "TMDB API", "React-Router"],
   },
 ];
+
+export default projects;

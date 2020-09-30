@@ -1,5 +1,6 @@
 import React from "react";
-import ContactLink from "./ContactLink";
+import Link from "./Link";
+import Item from "./Item";
 
 function Terminal() {
   return (
@@ -17,26 +18,21 @@ function Terminal() {
           <div className="terminal__prompt">Marius.contactInfo</div>
           <div className="terminal__command">
             [
-            <ContactLink
+            <Link
               URL="mailto:csmarius0@gmail.com"
               text='"csmarius0@gmail.com"'
             />
             ,{" "}
-            <ContactLink
+            <Link
               URL="https://www.linkedin.com/in/marius-ciocoiu/"
               text='"LinkedIn"'
             />
-            ,{" "}
-            <ContactLink
-              URL="https://github.com/misterblack0"
-              text='"GitHub"'
-            />
-            ]
+            , <Link URL="https://github.com/misterblack0" text='"GitHub"' />]
           </div>
           <div className="terminal__prompt">Marius.resume</div>
           <div className="terminal__command">
             [
-            <ContactLink
+            <Link
               URL="https://www.linkedin.com/in/marius-ciocoiu/"
               text='"mariusciocoiu.pdf"'
             />
@@ -44,13 +40,16 @@ function Terminal() {
           </div>
           <div className="terminal__prompt">Marius.interests</div>
           <div className="terminal__command">
-            [&quot;web development&quot;, &quot;linux&quot;,{" "}
-            &quot;blockchain&quot;, &quot;finance&quot;, &quot;sport&quot;]
+            [
+            <Item content="web development" />, <Item content="linux" />,{" "}
+            <Item content="blockchain" />, <Item content="finance" />,{" "}
+            <Item content="sport" />]
           </div>
           <div className="terminal__prompt">Marius.skills</div>
           <div className="terminal__command">
-            [&quot;Sass&quot;, &quot;JavaScript&quot;, &quot;React&quot;,
-            &quot;webpack&quot;, &quot;git&quot;]
+            [<Item content="Sass" />, <Item content="Javascript" />,{" "}
+            <Item content="React" />, <Item content="webpack" />,{" "}
+            <Item content="git" />]
           </div>
           <div className="terminal__prompt">
             <span className="terminal__pulse">_</span>

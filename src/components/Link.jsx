@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactLink(props) {
+function Link(props) {
   return (
     <span>
       <a rel="noopener noreferrer" target="_blank" href={props.URL}>
@@ -10,4 +10,4 @@ function ContactLink(props) {
   );
 }
 
-export default ContactLink;
+export default Link;
