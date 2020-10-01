@@ -1,5 +1,6 @@
 import React from "react";
 import Terminal from "./Terminal";
+import Link from "./Link";
 
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
         experiences.
       </p>
       <p>
-        Check out my <a href="#projects">side-projects</a> below.
+        Check out my <Link URL="#projects" text="side-projects" /> below.
       </p>
       <Terminal />
     </section>

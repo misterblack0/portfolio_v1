@@ -3,7 +3,7 @@ import React from "react";
 function NavbarItem(props) {
   return (
     <li>
-      <a href={props.id}>{props.section}</a>
+      <a className="link--white" href={props.id}>{props.section}</a>
     </li>
   );
 }

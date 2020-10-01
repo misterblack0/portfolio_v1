@@ -3,7 +3,7 @@ import Link from "./Link";
 
 function Contact() {
   return (
-    <section id="Contact" className="contact">
+    <section id="contact" className="contact">
       <h2 className="secondary-heading">Get in touch!</h2>
       <div>
         <Link URL="mailto:csmarius0@gmail.com" text="csmarius0@gmail.com" />
