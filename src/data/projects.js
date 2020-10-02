@@ -4,8 +4,8 @@ const projects = [
     name: "project-name",
     description: "project-description",
     image: "",
-    github: "https://github.com/",
     appLink: "https://",
+    github: "https://github.com/",
     techStack: ["React", "TMDB API", "React-Router"],
   },
   {
@@ -13,8 +13,8 @@ const projects = [
     name: "project-name",
     description: "project-description",
     image: "",
-    github: "https://github.com/",
     appLink: "https://",
+    github: "https://github.com/",
     techStack: ["React", "TMDB API", "React-Router"],
   },
 ];
