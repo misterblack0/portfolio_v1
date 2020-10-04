@@ -7,7 +7,14 @@ function Projects() {
     <div>
       <h2 className="secondary-heading">Projects</h2>
       {projects.map((project) => (
-        <ProjectCard key={project.id} />
+        <ProjectCard
+          title={project.name}
+          description={project.description}
+          skill={project.techStack}
+          URL={project.appLink}
+          githubURL={project.github}
+          key={project.id}
+        />
       ))}
     </div>
   );

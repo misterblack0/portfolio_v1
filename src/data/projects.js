@@ -1,8 +1,8 @@
 const projects = [
   {
     id: 1,
-    name: "project-name",
-    description: "project-description",
+    name: "project-namebb",
+    description: "blabla-description",
     image: "",
     appLink: "https://",
     github: "https://github.com/",
