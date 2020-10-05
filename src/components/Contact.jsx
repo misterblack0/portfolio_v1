@@ -4,7 +4,7 @@ import Link from "./Link";
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <h2 className="secondary-heading">Get in touch!</h2>
+      <h2 className="section__title">Get in touch!</h2>
       <div>
         <Link URL="mailto:csmarius0@gmail.com" text="csmarius0@gmail.com" />
         <Link

@@ -4,8 +4,8 @@ import projects from "../data/projects";
 
 function Projects() {
   return (
-    <div>
-      <h2 className="secondary-heading">Projects</h2>
+    <section id="projects">
+      <h2 className="section__title">Projects</h2>
       {projects.map((project) => (
         <ProjectCard
           title={project.name}
@@ -23,7 +23,7 @@ function Projects() {
           key={project.id}
         />
       ))}
-    </div>
+    </section>
   );
 }
 
