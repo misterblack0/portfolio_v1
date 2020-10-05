@@ -10,9 +10,9 @@ function Projects() {
         <ProjectCard
           title={project.name}
           description={project.description}
-          skills={project.techStack.map((skill, i) => {
+          skills={project.techStack.map((skill, id) => {
             return (
-              <span key={project.techStack[i]} className="project__skill">
+              <span key={project.techStack[id]} className="project__skill">
                 {skill}
               </span>
             );

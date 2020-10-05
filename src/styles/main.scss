@@ -147,11 +147,6 @@ header {
     color: #32c146;
     display: flex;
     flex-wrap: wrap;
-
-    & a:hover {
-      opacity: 0.8;
-      transition: 0.1s ease-in-out;
-    }
   }
 
   &__btn,
@@ -186,8 +181,7 @@ header {
 
 footer p {
   font-size: 1.1rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .section__title {
@@ -322,6 +316,15 @@ footer p {
 
   &:hover {
     background-color: rgba(18, 18, 18, 0.9);
+  }
+}
+
+.link {
+  color: $secondary-color;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.1s ease-in-out;
   }
 }
 

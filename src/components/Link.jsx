@@ -4,7 +4,7 @@ function Link(props) {
   return (
     <span>
       <a
-        className="link--blue"
+        className="link"
         rel="noopener noreferrer"
         target="_blank"
         href={props.URL}
