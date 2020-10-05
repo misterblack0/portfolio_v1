@@ -10,9 +10,16 @@ function Projects() {
         <ProjectCard
           title={project.name}
           description={project.description}
-          skill={project.techStack}
+          skills={project.techStack.map((skill, i) => {
+            return (
+              <span key={project.techStack[i]} className="project__skill">
+                {skill}
+              </span>
+            );
+          })}
           URL={project.appLink}
           githubURL={project.github}
+          img={project.image}
           key={project.id}
         />
       ))}

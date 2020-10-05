@@ -64,6 +64,7 @@ header {
   margin-top: 7rem;
   &__heading {
     display: flex;
+    align-items: center;
     margin: 6rem 0;
   }
 
@@ -77,6 +78,7 @@ header {
   & h1::before {
     content: ">\A0";
     padding-right: 2rem;
+    vertical-align: 8%;
   }
 
   &__caret {
@@ -135,6 +137,7 @@ header {
   &__prompt::before {
     content: ">\A0";
     padding-right: 0.5rem;
+    vertical-align: 8%;
   }
 
   &__command {
@@ -222,22 +225,92 @@ footer p {
 }
 
 .project {
-  
-  background-color: $primary-color;
+  background-color: #232323;
+  color: $primary-color;
+  margin-bottom: 4rem;
+  width: 100%;
+  padding: 3.5rem;
+  box-sizing: border-box;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0.4rem;
+  box-shadow: 0 0.25rem 0.5rem #12181e;
+  overflow: hidden;
+
+  &__image {
+    display: none;
+  }
+
+  &__side-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__skills-container,
+  &__buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+
   &__title {
+    font-weight: 500;
+    font-size: 2.4rem;
+
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   &__description {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    line-height: 2.7rem;
   }
 
   &__skill {
+    font-size: 1.3rem;
+    border-radius: 0.4rem;
+    border: 2px solid #32c1457e;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   &__link {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 4rem;
+    padding: 0 1.5rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11),
+      0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 0.4rem;
+    letter-spacing: 0.025rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    background: $secondary-color;
+    color: #000;
+
+    &:hover {
+      background-color: #00c2cc;
+      transform: translateY(-1px);
+    }
   }
 }
 
 .secondary {
+  background: #121212;
+  color: $secondary-color;
+
+  &:hover {
+    background-color: rgba(18, 18, 18, 0.9);
+  }
 }
 
 /* Media Queries */
