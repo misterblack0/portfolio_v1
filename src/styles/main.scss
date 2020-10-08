@@ -492,7 +492,6 @@ footer p {
 
     &__image-container {
       width: 40%;
-
       clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     }
 
@@ -502,6 +501,7 @@ footer p {
     }
 
     &__side-container {
+      width: 60%;
       display: flex;
       flex-direction: column;
       padding: 3.5rem;
