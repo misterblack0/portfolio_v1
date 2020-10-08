@@ -8,8 +8,11 @@ function About() {
         <span className="about__caret">&nbsp;</span>
       </div>
       <p>
-        I am a web developer and my passion is building simple, beautiful user
-        experiences.
+        My goal is to increase my value as a developer and to produce valuable
+        work which can help companies and individuals. I love learning and I
+        believe that our knowledge should have solid foundations. I think that
+        learning from different domains gives you original ideas, helps you
+        innovate and, brings value in your life.
       </p>
       <p>
         Check out my{" "}
