@@ -12,7 +12,7 @@ function About() {
         work which can help companies and individuals. I love learning and I
         believe that our knowledge should have solid foundations. I think that
         learning from different domains gives you original ideas, helps you
-        innovate and, brings value in your life.
+        innovate and brings value in your life.
       </p>
       <p>
         Check out my{" "}

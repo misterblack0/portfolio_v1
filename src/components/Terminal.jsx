@@ -33,7 +33,7 @@ function Terminal() {
           <div className="terminal__command">
             [
             <Link
-              URL="https://www.linkedin.com/in/marius-ciocoiu/"
+              URL="https://mariusc.dev/marius-ciocoiu_resume.pdf"
               text='"mariusciocoiu.pdf"'
             />
             ]
