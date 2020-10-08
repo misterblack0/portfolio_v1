@@ -15,6 +15,18 @@ ul {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #212020;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dcdcdc;
+}
+
 html {
   font-size: 62.5%;
   font-family: brandon-grotesque, sans-serif;
