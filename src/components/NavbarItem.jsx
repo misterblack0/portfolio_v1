@@ -1,12 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-function NavbarItem(props) {
-  return (
-    <li>
-      <a href={props.id}>{props.section}</a>
-    </li>
-  );
-}
+const NavbarItem = (props) => (
+  <li>
+    <a href={props.id}>{props.section}</a>
+  </li>
+);
 
 export default NavbarItem;
