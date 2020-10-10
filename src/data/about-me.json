@@ -1,0 +1,24 @@
+[
+    {
+      "input": "Marius.currentLocation",
+      "return": "Bucharesto, Romania"
+    },
+    {
+      "input": "Marius.contactInfo",
+      "return":
+        "["<a href="mailto:csmarius0@gmail.com">csmarius0@gmail.com</a>", "<a rel="noopener" href="https://www.linkedin.com/in/marius-ciocoiu/">LinkedIn</a>', "<a rel="noopener" href="https://github.com/misterblack0">github</a>"]"
+    },
+    {
+      "input": "Marius.resume",
+      "return": "<a rel="noopener" href="/marius-ciocoiu_resume.pdf" target="_blank">mariusciocoiu.pdf</a>"
+    },
+    {
+      "input": "Marius.interests",
+      "return": "["web development", "linux", "blockchain", "finance", "sport"]"
+    },
+    {
+      "input": "Marius.skills",
+      "return":
+        "["Sass", "JavaScript", "React", "webpack", "git"]"
+    }
+  ]
