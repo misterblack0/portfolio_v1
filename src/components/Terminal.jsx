@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "./Link";
 import Item from "./Item";
+import aboutMe from "../data/aboutMe";
+import TerminalItem from "./TerminalItem";
 
 const Terminal = () => (
   <div className="terminal__window">
@@ -9,7 +11,7 @@ const Terminal = () => (
     </div>
     <div className="terminal__body">
       <pre>
-        <div className="terminal__prompt">Marius.currentLocation</div>
+        {/* <div className="terminal__prompt">Marius.currentLocation</div>
 
         <div className="terminal__command">
           [&quot;Bucharest, Romania&quot;]
@@ -49,7 +51,14 @@ const Terminal = () => (
         </div>
         <div className="terminal__prompt">
           <span className="terminal__pulse">_</span>
-        </div>
+        </div> */}
+        {aboutMe.map((item) => (
+          <TerminalItem
+            input={item.input}
+            
+          />
+        ))}
+        ;
       </pre>
     </div>
   </div>

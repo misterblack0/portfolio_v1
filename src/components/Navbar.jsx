@@ -1,12 +1,13 @@
 import React from "react";
-import NavbarItem from "./NavbarItem";
+import NavbarLink from "./NavbarLink";
+import "./navbar.scss";
 
 const Navbar = () => (
   <header>
     <nav className="navbar">
       <ul>
-        <NavbarItem id="#projects" section="Projects" />
-        <NavbarItem id="#contact" section="Contact" />
+        <NavbarLink id="#projects" section="Projects" />
+        <NavbarLink id="#contact" section="Contact" />
       </ul>
     </nav>
   </header>

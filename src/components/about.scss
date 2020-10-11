@@ -1,0 +1,60 @@
+$primary-color: #eeeeee;
+$secondary-color: #00adb5;
+$bg-color: #222831;
+
+.about {
+  margin-top: 7rem;
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+  }
+
+  & h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $secondary-color;
+    margin: 0;
+  }
+
+  & h1::before {
+    content: ">\A0";
+    padding-right: 2rem;
+    vertical-align: 8%;
+  }
+
+  &__caret {
+    height: 3.5rem;
+    width: 1.2rem;
+    display: block;
+    background-color: $secondary-color;
+    animation: caret 1s steps(1) infinite;
+  }
+
+  & p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about {
+    & h1 {
+      font-size: 6rem;
+    }
+
+    &__caret {
+      height: 7.5rem;
+      width: 2.5rem;
+    }
+
+    & p {
+      font-size: 2.2rem;
+    }
+  }
+}

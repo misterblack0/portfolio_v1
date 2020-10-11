@@ -15,18 +15,6 @@ ul {
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background: #212020;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #dcdcdc;
-}
-
 html {
   font-size: 62.5%;
   font-family: brandon-grotesque, sans-serif;
@@ -44,73 +32,18 @@ body {
   margin: 0 auto;
 }
 
-header {
-  max-width: 93vw;
-  display: flex;
-  align-items: center;
-  margin-top: 4rem;
-  justify-content: center;
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #212020;
 }
-
-.navbar {
-  & ul {
-    width: 20rem;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  & a {
-    display: inline-block;
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: $primary-color;
-
-    &:hover {
-      color: $secondary-color;
-      transition: 0.2s ease-in-out;
-    }
-  }
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
-
-.about {
-  margin-top: 7rem;
-  &__heading {
-    display: flex;
-    align-items: center;
-    margin: 6rem 0;
-  }
-
-  & h1 {
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: $secondary-color;
-    margin: 0;
-  }
-
-  & h1::before {
-    content: ">\A0";
-    padding-right: 2rem;
-    vertical-align: 8%;
-  }
-
-  &__caret {
-    height: 3.5rem;
-    width: 1.2rem;
-    display: block;
-    background-color: $secondary-color;
-    animation: caret 1s steps(1) infinite;
-  }
-
-  & p {
-    font-size: 1.8rem;
-    line-height: 1.5;
-  }
-
-  & a {
-    text-decoration: none;
-    color: $secondary-color;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #dcdcdc;
 }
 
 /* Terminal Design */
@@ -192,11 +125,6 @@ header {
   }
 }
 
-footer p {
-  font-size: 1.3rem;
-  text-align: center;
-}
-
 .section__title {
   width: 100%;
   font-size: 2.4rem;
@@ -216,111 +144,6 @@ footer p {
     margin: 0 auto;
     margin-top: 3rem;
     width: 50%;
-  }
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  & span {
-    margin-bottom: 3rem;
-  }
-
-  & a {
-    font-size: 1.7rem;
-    text-decoration: none;
-    color: $primary-color;
-    &:hover {
-      color: $secondary-color;
-      transition: 0.2s ease-in-out;
-    }
-  }
-}
-
-.project {
-  background-color: #232323;
-  color: $primary-color;
-  margin-bottom: 4rem;
-  width: 100%;
-  padding: 3.5rem;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.4rem;
-  box-shadow: 0 0.25rem 0.7rem #12181e;
-  overflow: hidden;
-
-  &__image {
-    display: none;
-  }
-
-  &__side-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__skills-container,
-  &__buttons-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__title {
-    font-weight: 500;
-    font-size: 2.4rem;
-
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-
-  &__description {
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-    line-height: 2.7rem;
-  }
-
-  &__skill {
-    font-size: 1.3rem;
-    border-radius: 0.4rem;
-    border: 2px solid #258b33;
-    padding: 0.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  &__link {
-    margin-right: 2rem;
-    margin-top: 2rem;
-    white-space: nowrap;
-    display: inline-block;
-    line-height: 4rem;
-    padding: 0 1.5rem;
-    box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11),
-      0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: 0.4rem;
-    letter-spacing: 0.025rem;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-size: 1.5rem;
-    font-weight: 500;
-    box-sizing: border-box;
-    background: $secondary-color;
-    color: #000;
-
-    &:hover {
-      background-color: #00c2cc;
-      transform: translateY(-1px);
-    }
   }
 }
 
@@ -348,45 +171,6 @@ footer p {
 @media (min-width: 1080px) {
   #root {
     max-width: 45vw;
-  }
-
-  header {
-    max-width: 45vw;
-    margin-top: 1rem;
-    height: 10rem;
-    justify-content: flex-end;
-  }
-
-  .navbar {
-    & ul {
-      flex-direction: row;
-      justify-content: flex-end;
-
-      text-align: right;
-    }
-
-    & ul li {
-      margin-left: 4rem;
-    }
-
-    & a {
-      font-size: 1.9rem;
-    }
-  }
-
-  .about {
-    & h1 {
-      font-size: 6rem;
-    }
-
-    &__caret {
-      height: 7.5rem;
-      width: 2.5rem;
-    }
-
-    & p {
-      font-size: 2.2rem;
-    }
   }
 
   /* Terminal Design */
@@ -462,100 +246,57 @@ footer p {
     }
   }
 
-  .contact {
-    & div {
-      flex-direction: row;
-      margin: 6rem auto;
-    }
+  /* Keyframes */
 
-    & span {
-      &:after {
-        font-size: 2rem;
-        content: "•";
-        margin: 0 3rem;
-      }
-
-      &:nth-child(3):after {
-        content: "";
-        margin: 0;
-      }
+  @-webkit-keyframes caret {
+    50% {
+      background-color: transparent;
     }
   }
 
-  .project {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-
-    &__image-container {
-      width: 40%;
-      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    }
-
-    &__image {
-      height: 100%;
-      display: block;
-    }
-
-    &__side-container {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      padding: 3.5rem;
+  @-moz-keyframes caret {
+    50% {
+      background-color: transparent;
     }
   }
-}
 
-/* Keyframes */
+  @keyframes caret {
+    50% {
+      background-color: transparent;
+    }
+  }
 
-@-webkit-keyframes caret {
-  50% {
-    background-color: transparent;
+  @-webkit-keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-}
-
-@-moz-keyframes caret {
-  50% {
-    background-color: transparent;
+  @-moz-keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-}
-
-@keyframes caret {
-  50% {
-    background-color: transparent;
-  }
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
