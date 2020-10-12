@@ -1,6 +1,4 @@
-$primary-color: #eeeeee;
-$secondary-color: #00adb5;
-$bg-color: #222831;
+@import "../components/design-tokens/variables.scss";
 
 .contact {
   display: flex;

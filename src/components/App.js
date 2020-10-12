@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/main.scss";
+import "./app.scss";
 import Navbar from "./Navbar";
 import About from "./About";
 import Terminal from "./Terminal";

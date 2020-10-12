@@ -1,0 +1,88 @@
+.terminal {
+  &__window {
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 4rem auto;
+    box-shadow: 0 0.25rem 0.5rem #12181e;
+    border-radius: 0 0 0.1rem 0.1rem;
+  }
+
+  &__bar {
+    background: #191919;
+    height: 3.6rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  &__body {
+    height: 100%;
+    background: #232323;
+    padding: 1.8rem;
+  }
+
+  &__body pre {
+    margin: 0;
+    font-family: inherit;
+  }
+
+  &__body .terminal__pulse {
+    -webkit-animation: pulse 1s ease-in-out infinite;
+    -moz-animation: pulse 1s ease-in-out infinite;
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  &__prompt::before {
+    content: ">\A0";
+    padding-right: 0.5rem;
+    vertical-align: 8%;
+  }
+
+  &__command {
+    width: 100%;
+    padding-top: 0.1rem;
+    padding-bottom: 2.5rem;
+    color: #32c146;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn,
+  &__btn::before,
+  &__btn::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    display: block;
+  }
+
+  &__btn {
+    background: #f6b73e;
+    position: relative;
+    margin-left: 3.8rem;
+    top: 1.2rem;
+  }
+  &__btn::before,
+  &__btn::after {
+    content: " ";
+    position: absolute;
+  }
+  &__btn::before {
+    background: #f55551;
+    margin-left: -2rem;
+  }
+  &__btn::after {
+    background: #32c146;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 108rem) {
+  .terminal {
+    &__window {
+      font-size: 1.9rem;
+      margin: 8rem auto;
+    }
+    &__command {
+      padding-bottom: 3rem;
+    }
+  }
+}
