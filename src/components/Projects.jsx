@@ -10,9 +10,9 @@ const Projects = () => (
       <ProjectCard
         title={project.name}
         description={project.description}
-        skills={project.techStack.map((tech) => {
+        skills={project.techStack.map((tech, id) => {
           return (
-            <span key={tech} className="project__skill">
+            <span key={id} className="project__skill">
               {tech}
             </span>
           );
