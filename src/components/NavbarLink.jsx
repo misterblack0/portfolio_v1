@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-const NavbarItem = (props) => (
+const NavbarItem = ({ id, section }) => (
   <li>
-    <a href={props.id}>{props.section}</a>
+    <a href={id}>{section}</a>
   </li>
 );
 
