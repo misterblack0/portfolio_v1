@@ -10,10 +10,10 @@ const ProjectCard = ({ img, title, description, skills, URL, githubURL }) => (
       <p className="project__description">{description}</p>
       <div className="project__skills-container">{skills}</div>
       <div className="project__buttons-container">
-        <a className="project__link" href={URL}>
+        <a className="project__btn" href={URL}>
           Live Demo
         </a>
-        <a className="project__link secondary" href={githubURL}>
+        <a className="project__btn secondary" href={githubURL}>
           View Source
         </a>
       </div>

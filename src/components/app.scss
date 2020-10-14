@@ -76,15 +76,6 @@ body {
   }
 }
 
-.secondary {
-  background: #121212;
-  color: $secondary-color;
-
-  &:hover {
-    background-color: rgba(18, 18, 18, 0.9);
-  }
-}
-
 /* Media Queries */
 
 @media (min-width: 1080px) {

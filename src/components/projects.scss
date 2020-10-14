@@ -1,7 +1,7 @@
 @import "../components/design-tokens/variables.scss";
 
 .project {
-  background-color: #232323;
+  background-color: $p-bg-color;
   color: $primary-color;
   margin-bottom: 4rem;
   width: 100%;
@@ -46,13 +46,13 @@
   &__skill {
     font-size: 1.3rem;
     border-radius: 0.4rem;
-    border: 2px solid #258b33;
+    border: 2px solid $skill-color;
     padding: 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
-  &__link {
+  &__btn {
     margin-right: 2rem;
     margin-top: 2rem;
     white-space: nowrap;
@@ -69,12 +69,21 @@
     font-weight: 500;
     box-sizing: border-box;
     background: $secondary-color;
-    color: #000;
+    color: $btn-text-color;
 
     &:hover {
-      background-color: #00c2cc;
+      background-color: $btn-hover-color;
       transform: translateY(-1px);
     }
+  }
+}
+
+.secondary {
+  background: $btn2-bg-color;
+  color: $secondary-color;
+
+  &:hover {
+    background-color: $btn2-hover-color;
   }
 }
 

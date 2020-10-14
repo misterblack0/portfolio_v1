@@ -1,3 +1,5 @@
+@import "../components/design-tokens/variables.scss";
+
 .terminal {
   &__window {
     font-size: 1.7rem;
@@ -8,14 +10,14 @@
   }
 
   &__bar {
-    background: #191919;
+    background: $t-bar-color;
     height: 3.6rem;
     border-radius: 0.5rem 0.5rem 0 0;
   }
 
   &__body {
     height: 100%;
-    background: #232323;
+    background: $t-bg-color;
     padding: 1.8rem;
   }
 
@@ -40,7 +42,7 @@
     width: 100%;
     padding-top: 0.1rem;
     padding-bottom: 2.5rem;
-    color: #32c146;
+    color: $t-btn3-color;
     display: flex;
     flex-wrap: wrap;
   }
@@ -55,7 +57,7 @@
   }
 
   &__btn {
-    background: #f6b73e;
+    background: $t-btn2-color;
     position: relative;
     margin-left: 3.8rem;
     top: 1.2rem;
@@ -66,11 +68,11 @@
     position: absolute;
   }
   &__btn::before {
-    background: #f55551;
+    background: $t-btn-color;
     margin-left: -2rem;
   }
   &__btn::after {
-    background: #32c146;
+    background: $t-btn3-color;
     margin-left: 2rem;
   }
 }
