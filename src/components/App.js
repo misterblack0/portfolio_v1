@@ -8,14 +8,14 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 
 const App = () => (
-  <div>
+  <>
     <Navbar />
     <About />
     <Terminal />
     <Projects />
     <Contact />
     <Footer />
-  </div>
+  </>
 );
 
 export default App;
