@@ -5,20 +5,23 @@
     font-size: 1.7rem;
     width: 100%;
     margin: 4rem auto;
-    box-shadow: 0 0.25rem 0.5rem #12181e;
+
     border-radius: 0 0 0.1rem 0.1rem;
   }
 
   &__bar {
     background: $t-bar-color;
     height: 3.6rem;
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 1rem 1rem 0 0;
   }
 
   &__body {
     height: 100%;
     background: $t-bg-color;
     padding: 1.8rem;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+      0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
   }
 
   &__body pre {
@@ -32,17 +35,21 @@
     animation: pulse 1s ease-in-out infinite;
   }
 
-  &__prompt::before {
-    content: ">\A0";
-    padding-right: 0.5rem;
-    vertical-align: 8%;
+  &__prompt {
+    color: $t-prompt-color;
+
+    &::before {
+      content: ">\A0";
+      padding-right: 0.5rem;
+      vertical-align: 8%;
+    }
   }
 
   &__command {
     width: 100%;
     padding-top: 0.1rem;
     padding-bottom: 2.5rem;
-    color: $t-btn3-color;
+    color: $t-command-color;
     display: flex;
     flex-wrap: wrap;
   }
@@ -50,14 +57,15 @@
   &__btn,
   &__btn::before,
   &__btn::after {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
     border-radius: 100%;
     display: block;
   }
 
   &__btn {
     background: $t-btn2-color;
+    border: 1px solid #ffb524;
     position: relative;
     margin-left: 3.8rem;
     top: 1.2rem;
@@ -69,10 +77,12 @@
   }
   &__btn::before {
     background: $t-btn-color;
+    border: 1px solid #f65549;
     margin-left: -2rem;
   }
   &__btn::after {
     background: $t-btn3-color;
+    border: 1px solid #2dbb41;
     margin-left: 2rem;
   }
 }
