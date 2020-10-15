@@ -1,32 +1,26 @@
 @import "../components/design-tokens/variables.scss";
 
+.Typewriter__wrapper {
+  font-size: 6.8rem;
+  font-weight: 500;
+  color: $secondary-color;
+}
+
+.Typewriter__wrapper::before {
+  content: ">\A0";
+  padding-right: 2.5rem;
+  vertical-align: 8%;
+}
+
+.Typewriter__cursor {
+  font-size: 9rem;
+  color: rgba(116, 127, 224, 0.65);
+}
+
 .about {
   margin-top: 7rem;
   &__heading {
-    display: flex;
-    align-items: center;
     margin: 4rem 0;
-  }
-
-  & h1 {
-    font-size: 3.8rem;
-    font-weight: 500;
-    color: $secondary-color;
-    margin: 0;
-  }
-
-  & h1::before {
-    content: ">\A0";
-    padding-right: 2.5rem;
-    vertical-align: 8%;
-  }
-
-  &__caret {
-    height: 3.5rem;
-    width: 1.2rem;
-    display: block;
-    background-color: rgba(116,127,224,.65);
-    animation: caret 1s steps(1) infinite;
   }
 
   & p {

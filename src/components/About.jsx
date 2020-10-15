@@ -1,11 +1,19 @@
 import React from "react";
 import "./about.scss";
+import Typewriter from "typewriter-effect";
 
 const About = () => (
   <section className="about">
     <div className="about__heading">
-      <h1>Marius Ciocoiu</h1>
-      <span className="about__caret">&nbsp;</span>
+      <Typewriter
+        className="test"
+        onInit={(typewriter) => {
+          typewriter.typeString("Marius Ciocoiu").start();
+        }}
+        options={{
+          delay: 50,
+        }}
+      />
     </div>
     <p>
       My goal is to increase my value as a developer and to produce valuable

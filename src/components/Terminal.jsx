@@ -46,7 +46,7 @@ const Terminal = () => (
           <Item content="git" />]
         </div>
         <div className="terminal__prompt">
-          <span className="terminal__pulse">_</span>
+          <span className="terminal__pulse">&Iota;</span>
         </div>
       </pre>
     </div>
