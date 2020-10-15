@@ -5,19 +5,19 @@
   &__heading {
     display: flex;
     align-items: center;
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
 
   & h1 {
-    font-size: 3.5rem;
-    font-weight: 300;
+    font-size: 3.8rem;
+    font-weight: 500;
     color: $secondary-color;
     margin: 0;
   }
 
   & h1::before {
     content: ">\A0";
-    padding-right: 2rem;
+    padding-right: 2.5rem;
     vertical-align: 8%;
   }
 
@@ -25,17 +25,19 @@
     height: 3.5rem;
     width: 1.2rem;
     display: block;
-    background-color: $secondary-color;
+    background-color: rgba(116,127,224,.65);
     animation: caret 1s steps(1) infinite;
   }
 
   & p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 400;
     line-height: 1.5;
   }
 
   & a {
     text-decoration: none;
+    font-weight: 600;
     color: $secondary-color;
   }
 }
@@ -43,7 +45,7 @@
 @media (min-width: 1080px) {
   .about {
     & h1 {
-      font-size: 6rem;
+      font-size: 7rem;
     }
 
     &__caret {
@@ -52,7 +54,7 @@
     }
 
     & p {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
   }
 }

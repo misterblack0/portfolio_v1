@@ -12,9 +12,7 @@ const Terminal = () => (
       <pre>
         <div className="terminal__prompt">Marius.currentLocation</div>
 
-        <div className="terminal__command">
-          [&quot;Bucharest, Romania&quot;]
-        </div>
+        <div className="terminal__command">&quot;Bucharest, Romania&quot;</div>
 
         <div className="terminal__prompt">Marius.contactInfo</div>
         <div className="terminal__command">
@@ -29,12 +27,10 @@ const Terminal = () => (
         </div>
         <div className="terminal__prompt">Marius.resume</div>
         <div className="terminal__command">
-          [
           <Link
             URL="https://mariusc.dev/marius-ciocoiu_resume.pdf"
             text='"mariusciocoiu.pdf"'
           />
-          ]
         </div>
         <div className="terminal__prompt">Marius.interests</div>
         <div className="terminal__command">
