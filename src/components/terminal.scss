@@ -9,14 +9,14 @@
   }
 
   &__bar {
-    background: $t-bar-color;
+    background: #e4e3e5;
     height: 3.6rem;
     border-radius: 1rem 1rem 0 0;
   }
 
   &__body {
     height: 100%;
-    background: $t-bg-color;
+    background: #5a5d7a;
     padding: 1.8rem;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
@@ -35,7 +35,7 @@
   }
 
   &__prompt {
-    color: $t-prompt-color;
+    color: #f7f7f7;
 
     &::before {
       content: ">\A0";
@@ -48,7 +48,7 @@
     width: 100%;
     padding-top: 0.1rem;
     padding-bottom: 2.5rem;
-    color: $t-command-color;
+    color: #e7d184;
     display: flex;
     flex-wrap: wrap;
   }
@@ -63,7 +63,7 @@
   }
 
   &__btn {
-    background: $t-btn2-color;
+    background: #fdbc3d;
     border: 1px solid #ffb524;
     position: relative;
     margin-left: 3.8rem;
@@ -75,12 +75,12 @@
     position: absolute;
   }
   &__btn::before {
-    background: $t-btn-color;
+    background: #f96256;
     border: 1px solid #f65549;
     margin-left: -2rem;
   }
   &__btn::after {
-    background: $t-btn3-color;
+    background: #33c948;
     border: 1px solid #2dbb41;
     margin-left: 2rem;
   }
