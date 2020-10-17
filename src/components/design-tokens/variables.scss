@@ -1,2 +1,13 @@
 $primary-color: #525f7f;
 $secondary-color: #747fe0;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexDirection($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

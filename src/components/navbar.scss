@@ -2,10 +2,8 @@
 
 header {
   max-width: 93vw;
-  display: flex;
-  align-items: center;
   margin-top: 4rem;
-  justify-content: center;
+  @include flexCenter;
 }
 
 .navbar {
@@ -37,7 +35,6 @@ header {
       flex-direction: row;
       justify-content: flex-end;
       padding-right: 3rem;
-      text-align: right;
     }
 
     & ul li {

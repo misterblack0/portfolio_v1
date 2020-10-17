@@ -1,14 +1,12 @@
 @import "../components/design-tokens/variables.scss";
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  @include flexDirection(column);
   justify-content: center;
   align-items: center;
 
   & div {
-    display: flex;
-    flex-direction: column;
+    @include flexDirection(column);
     align-items: center;
   }
 

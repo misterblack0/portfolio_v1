@@ -1,15 +1,14 @@
 @import "../components/design-tokens/variables.scss";
 
 .project {
-  background-color: #FFF;
+  @include flexDirection(column);
+  background-color: #fff;
   color: $primary-color;
   margin-bottom: 5rem;
   width: 100%;
   padding: 3.5rem;
   box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
   border-radius: 0.4rem;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
     0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -20,8 +19,7 @@
   }
 
   &__side-container {
-    display: flex;
-    flex-direction: column;
+    @include flexDirection(column);
   }
 
   &__skills-container,
@@ -70,7 +68,7 @@
     font-weight: 600;
     box-sizing: border-box;
     background: $secondary-color;
-    color: #FFF;
+    color: #fff;
 
     &:hover {
       opacity: 0.8;
@@ -80,14 +78,13 @@
 }
 
 .secondary {
-  background: #FFF;
+  background: #fff;
   color: #747fe0;
 }
 
 @media (min-width: 1080px) {
   .project {
-    display: flex;
-    flex-direction: row;
+    @include flexDirection(row);
     padding: 0;
 
     &__image-container {
@@ -101,9 +98,8 @@
     }
 
     &__side-container {
+      @include flexDirection(column);
       width: 60%;
-      display: flex;
-      flex-direction: column;
       padding: 3.5rem;
     }
   }
