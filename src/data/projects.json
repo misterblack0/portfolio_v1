@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Portfolio",
     "description": "Responsive website built with ReactJS. The site content is passed in as JSON data, auto-generating components for easy maintenance.",
-    "image": "https://i.postimg.cc/BnhDSD7z/1.png",
+    "image": "https://i.postimg.cc/15V0Yk0C/1.png",
     "appLink": "https://mariusc.dev",
     "github": "https://github.com/",
     "techStack": ["HTML5", "CSS3", "Sass", "Javascript", "ReactJS"]
